@@ -1,0 +1,23 @@
+<!-- src/app/customers/customer-list/customer-list.component.html -->
+<div class="container">
+    <h2>Customers</h2>
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Email</th>
+          <th>Phone</th>
+          <th>Address</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let customer of customers">
+          <td>{{ customer.Name }}</td>
+          <td>{{ customer.Email }}</td>
+          <td>{{ customer.Phone }}</td>
+          <td>{{ customer.Address }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  

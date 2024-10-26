@@ -1,0 +1,27 @@
+<div class="container order-details">
+    <h2>Order Details for Order #{{ order?.OrderId }}</h2>
+    <div *ngIf="order">
+      <h3>Customer Details</h3>
+      <p><strong>Order Id:</strong> #{{ order.UserId }}</p>
+      <p><strong>Order Date:</strong> {{ order.OrderDate }}</p>
+      <p><strong>User Id:</strong> #{{ order.UserId }}</p>
+      <p><strong>Payment Type:</strong> {{ order.PaymentType }}</p>
+
+      <h3>Products</h3>
+      <table class="table">
+        <thead>
+          <tr>
+            <th>ProductId</th>
+            <th>Quantity</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let product of order.Products">
+            <td>#{{ product.ProductId }}</td>
+            <td>{{ product.Quantity }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  

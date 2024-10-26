@@ -1,0 +1,30 @@
+
+.card {
+    margin-bottom: 20px;
+    padding: 20px;
+    border-left: 5px solid #007bff;
+    border-radius: 8px;
+  
+    &:hover {
+      border-left-color: #0056b3;
+    }
+  
+    .card-title {
+      font-size: 1.3rem;
+      color: #333;
+      font-weight: bold;
+    }
+  
+    .card-text {
+      font-size: 1rem;
+      color: #555;
+      margin: 5px 0;
+    }
+  
+    .btn-primary {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 8px 12px;
+    }
+  }
+  
